@@ -1,63 +1,110 @@
 <template>
-
-	<div class="slds-text-heading_large">
-		Please use the filters below to narrow down the forecast.
-	</div>
-	<br/>
-	<div class="slds-card">
-		<div class="slds-p-around_medium">
-			<div class="slds-grid slds-gutters slds-wrap">
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+	<div if:true={showFilter}>
+		<div class="slds-text-heading_large">
+			Please use the filters below to narrow down the forecast.
+		</div>
+		<br/>
+		<div class="slds-card">
+			<div class="slds-p-around_medium">
+				<div class="slds-grid slds-gutters slds-wrap">
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 						<lightning-input name="enter-search" label="Category" type="search" class="slds-p-bottom_x-small">
 			</lightning-input>
 				</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 									<lightning-input name="Sub-Category" label="Sub-Category" type="search">
 			</lightning-input>
 				</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 						<lightning-input name="Customer Department" label="Customer Department" type="search">
 			</lightning-input>
 					</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 						<lightning-input name="Customer Commodity" label="Customer Commodity" type="search" class="slds-p-bottom_x-small">
 			</lightning-input>
 				</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 									<lightning-input name="Customer Category" label="Customer Category" type="search">
 			</lightning-input>
 				</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 						<lightning-input name="Customer Buyer" label="Customer Buyer" type="search">
 			</lightning-input>
 					</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 						<lightning-input name="Flag" label="Flag" type="search" class="slds-p-bottom_x-small">
 			</lightning-input>
 				</span>
-				</div>
-				<div class="slds-col slds-size_1-of-3">
-					<span>
+					</div>
+					<div class="slds-col slds-size_1-of-3">
+						<span>
 							<lightning-input name="Customer Identifier" label="Customer Identifier" type="search"></lightning-input>
 				</span>
+					</div>
 				</div>
 			</div>
 		</div>
+		<br/>
+		<lightning-button variant="brand" onclick={filteforecastbutton} label="Filter Forecast" title="Filter Forecast"
+			icon-name="utility:search" class="slds-p-top_x-large">
+		</lightning-button>
 	</div>
-	<br/>
-	<lightning-button variant="brand" label="Filter" title="Filter" icon-name="utility:check" class="slds-p-top_x-large">
-	</lightning-button>
+	<div if:true={showForecast}>
+		<lightning-button variant="brand" onclick={filterhidebutton} label="Change Filter Criteria"
+			title="Change Filter Criteria" icon-name="utility:back" class="slds-p-top_x-large">
+		</lightning-button>
+		<br/><br/>
+
+		<table class="tabledata">
+			<tr>
+				<th colspan="5" class="groupedheader">Product Details</th>
+				<th colspan="5" class="groupedheader">Customer Product Details</th>
+				<th colspan="3" class="groupedheader">Status Details</th>
+			</tr>
+			<tr>
+				<th class="sticky colone">Article</th>
+				<th class="sticky coltwo">Category</th>
+				<th class="sticky colthree">Sub-Category</th>
+				<th class="sticky colfour">Description</th>
+				<th>Flag</th>
+				<th>Customer Identifier</th>
+				<th>Customer Department</th>
+				<th>Customer Category</th>
+				<th>Customer Commodity</th>
+				<th>Customer Buyer</th>
+				<th>DC Range</th>
+				<th>New Line</th>
+				<th>OMS</th>
+			</tr>
+			<tr>
+				<td class="sticky colone">test</td>
+				<td class="sticky coltwo">test</td>
+				<td class="sticky colthree">test</td>
+				<td class="sticky colfour">test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+			</tr>
+
+		</table>
+	</div>
 </template>
