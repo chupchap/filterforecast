@@ -1,0 +1,63 @@
+<template>
+
+	<div class="slds-text-heading_large">
+		Please use the filters below to narrow down the forecast.
+	</div>
+	<br/>
+	<div class="slds-card">
+		<div class="slds-p-around_medium">
+			<div class="slds-grid slds-gutters slds-wrap">
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+						<lightning-input name="enter-search" label="Category" type="search" class="slds-p-bottom_x-small">
+			</lightning-input>
+				</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+									<lightning-input name="Sub-Category" label="Sub-Category" type="search">
+			</lightning-input>
+				</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+						<lightning-input name="Customer Department" label="Customer Department" type="search">
+			</lightning-input>
+					</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+						<lightning-input name="Customer Commodity" label="Customer Commodity" type="search" class="slds-p-bottom_x-small">
+			</lightning-input>
+				</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+									<lightning-input name="Customer Category" label="Customer Category" type="search">
+			</lightning-input>
+				</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+						<lightning-input name="Customer Buyer" label="Customer Buyer" type="search">
+			</lightning-input>
+					</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+						<lightning-input name="Flag" label="Flag" type="search" class="slds-p-bottom_x-small">
+			</lightning-input>
+				</span>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<span>
+							<lightning-input name="Customer Identifier" label="Customer Identifier" type="search"></lightning-input>
+				</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<lightning-button variant="brand" label="Filter" title="Filter" icon-name="utility:check" class="slds-p-top_x-large">
+	</lightning-button>
+</template>
