@@ -10,3 +10,53 @@ p {
     height: 100vh;
     overflow: scroll;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  width: 40px;
+}
+.colone{
+    min-width: 100px;
+    max-width: 100px;
+    left: 0px;
+}
+.coltwo{
+    min-width: 150px;
+    max-width: 150px;
+    left: 100px;
+}
+.colthree{
+    min-width: 150px;
+    max-width: 150px;
+    left: 250px;
+}
+.colfour{
+    min-width: 200px;
+    max-width: 200px;
+    left: 400px;
+}
+.tabledata {
+    padding-right:18px;
+    width:3800px;
+    min-width:3800px;
+}
+th{
+    border-bottom: 1px solid black;
+    text-align: center;
+
+}
+
+    th.groupedheader {
+        background-color: rgb(250, 255, 231);
+        line-height: 2em;
+        color:rgb(73, 73, 73);
+    }
+
+td {
+    border-bottom: 1px solid black;
+    border-bottom-style: dashed;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
