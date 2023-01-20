@@ -15,6 +15,7 @@ p {
   position: sticky;
   background-color: white;
   width: 40px;
+  z-index: 7;
 }
 .colone{
     min-width: 100px;
@@ -44,14 +45,15 @@ p {
 th{
     border-bottom: 1px solid black;
     text-align: center;
-
 }
 
     th.groupedheader {
-        background-color: rgb(250, 255, 231);
+        background-color: rgb(69, 69, 69);
         line-height: 2em;
-        color:rgb(73, 73, 73);
+        color:rgb(255, 255, 255);
+        font-weight: 600;
     }
+
 
 td {
     border-bottom: 1px solid black;
@@ -60,3 +62,20 @@ td {
     padding-left: 5px;
     padding-bottom: 5px;
   }
+    td.groupedheader {
+        background-color: rgb(250, 255, 231);
+        line-height: 2em;
+        color:rgb(73, 73, 73);
+        text-align: center;
+    }
+    td.thin{
+        width: 110px;
+    }
+    /* Styling for medium width  columns */
+    td.medium{
+        width: 200px;
+    }
+    /* Styling for wide columns */
+    td.wide{
+        column-width: 320px;
+    }
