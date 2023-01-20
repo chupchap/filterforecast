@@ -8,58 +8,43 @@
 			<div class="slds-p-around_medium">
 				<div class="slds-grid slds-gutters slds-wrap">
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-						<lightning-input name="enter-search" label="Category" type="search" class="slds-p-bottom_x-small">
-			</lightning-input>
-				</span>
+						<lightning-combobox name="category" required label="Category" value={value} placeholder="Select Category"
+							options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-									<lightning-input name="Sub-Category" label="Sub-Category" type="search">
-			</lightning-input>
-				</span>
+						<lightning-combobox name="subcategory" label="Sub-Category" value={value} placeholder="Select Sub-Category"
+							options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-						<lightning-input name="Customer Department" label="Customer Department" type="search">
-			</lightning-input>
-					</span>
+						<lightning-combobox name="customerdept" label="Customer Department" value={value}
+							placeholder="Select Customer Department" options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-						<lightning-input name="Customer Commodity" label="Customer Commodity" type="search" class="slds-p-bottom_x-small">
-			</lightning-input>
-				</span>
+						<lightning-combobox name="customercommodity" label="Customer Commodity" value={value}
+							placeholder="Select Customer Commodity" options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-									<lightning-input name="Customer Category" label="Customer Category" type="search">
-			</lightning-input>
-				</span>
+						<lightning-combobox name="CustomerCategory" label="Customer Category" value={value}
+							placeholder="Select Customer Category" options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-						<lightning-input name="Customer Buyer" label="Customer Buyer" type="search">
-			</lightning-input>
-					</span>
+						<lightning-combobox name="CustomerBuyer" label="Customer Buyer" value={value}
+							placeholder="Select Customer Buyer" options={options}></lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-						<lightning-input name="Flag" label="Flag" type="search" class="slds-p-bottom_x-small">
-			</lightning-input>
-				</span>
+						<lightning-combobox name="flag" label="Flag" value={value} placeholder="Select Flag" options={options}>
+						</lightning-combobox>
 					</div>
 					<div class="slds-col slds-size_1-of-3">
-						<span>
-							<lightning-input name="Customer Identifier" label="Customer Identifier" type="search"></lightning-input>
-				</span>
+						<lightning-combobox name="CustomerIdentifier" label="Customer Identifier" value={value}
+							placeholder="Select Customer Identifier" options={options}></lightning-combobox>
 					</div>
 				</div>
 			</div>
 		</div>
 		<br/>
-		<lightning-button variant="brand" onclick={filteforecastbutton} label="Filter Forecast" title="Filter Forecast"
-			icon-name="utility:search" class="slds-p-top_x-large">
+		<lightning-button variant="brand" onclick={filteforecastbutton} label="Filter Forecast" type="submit"
+			title="Filter Forecast" icon-name="utility:search" class="slds-p-top_x-large">
 		</lightning-button>
 	</div>
 	<div if:true={showForecast}>
@@ -149,111 +134,43 @@
 				<td>10</td>
 				<td>10</td>
 				<td>10</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-
-			</tr>
-			<tr>
-				<td class="sticky colone">test</td>
-				<td class="sticky coltwo">test</td>
-				<td class="sticky colthree">test</td>
-				<td class="sticky colfour">test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>test</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>10</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
-					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
-					</lightning-input>
-				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
@@ -285,43 +202,111 @@
 				<td>10</td>
 				<td>10</td>
 				<td>10</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-				<td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+
+			</tr>
+			<tr>
+				<td class="sticky colone">test</td>
+				<td class="sticky coltwo">test</td>
+				<td class="sticky colthree">test</td>
+				<td class="sticky colfour">test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>test</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td>10</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
+					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
+					</lightning-input>
+				</td>
+				<td class="thin">
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
