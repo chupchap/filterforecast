@@ -10,6 +10,10 @@ p {
     height: 100vh;
     overflow: scroll;
 }
+
+/*
+  This class ensures that a column is frozen to the left as the user scrolls right
+*/
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -17,6 +21,10 @@ p {
   width: 40px;
   z-index: 7;
 }
+
+/*
+  The following classes are hardcoded for each of the columns to work with the sticky class above.
+*/
 .colone{
     min-width: 100px;
     max-width: 100px;
@@ -37,6 +45,10 @@ p {
     max-width: 200px;
     left: 400px;
 }
+
+/*
+  Formatting for the table.
+*/
 .tabledata {
     padding-right:18px;
     width:3800px;
@@ -68,6 +80,8 @@ td {
         color:rgb(73, 73, 73);
         text-align: center;
     }
+
+    /* Styling for thin  columns */
     td.thin{
         width: 110px;
     }
