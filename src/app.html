@@ -1,4 +1,6 @@
 <template>
+
+	<!-- Simple conditional check to show and hide the filters -->
 	<div if:true={showFilter}>
 		<div class="slds-text-heading_large">
 			Please use the filters below to narrow down the forecast.
@@ -47,6 +49,8 @@
 			title="Filter Forecast" icon-name="utility:search" class="slds-p-top_x-large">
 		</lightning-button>
 	</div>
+
+	<!-- Simple conditional check to display or hide the Forecast based on the flter values selected above. -->
 	<div if:true={showForecast}>
 		<lightning-button variant="brand" onclick={filterhidebutton} label="Change Filter Criteria"
 			title="Change Filter Criteria" icon-name="utility:back" class="slds-p-top_x-large">
@@ -310,9 +314,7 @@
 					<lightning-input type="number" name="input1" variant="label-hidden" label="Enter a number" value="0">
 					</lightning-input>
 				</td>
-
 			</tr>
-
 		</table>
 	</div>
 </template>
