@@ -1,18 +1,5 @@
-h1 {
-    color: rgb(62, 62, 62);
-}
-p {
-    font-family: 'Salesforce Sans', Arial, sans-serif;
-    color: rgb(62, 62, 62);
-}
-.app {
-    background-color: #fafaf9;
-    height: 100vh;
-    overflow: scroll;
-}
-
 /*
-  This class ensures that a column is frozen to the left as the user scrolls right
+  This class ensures that a column is frozen to the left and to the top as the user scrolls right and down.
 */
 .stickyheaderprimary{
   position: -webkit-sticky;
