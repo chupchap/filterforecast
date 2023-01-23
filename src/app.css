@@ -14,17 +14,38 @@ p {
 /*
   This class ensures that a column is frozen to the left as the user scrolls right
 */
+.stickyheaderprimary{
+  position: -webkit-sticky;
+  position: sticky;
+  width: 40px;
+  z-index: 7;  
+}
+
+.stickyheader{
+  position: -webkit-sticky;
+  position: sticky;
+  width: 40px;
+}
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  background-color:rgb(241, 241, 241);
+  background-color:rgb(255, 255, 255);
   width: 40px;
-  z-index: 7;
+  z-index: 5;  
+}
+
+.stickyrow {
+    position: sticky;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    background-color:rgb(226, 226, 226);
+    top:0;
 }
 
 /*
   The following classes are hardcoded for each of the columns to work with the sticky class above.
 */
+
 .colone{
     min-width: 100px;
     max-width: 100px;
